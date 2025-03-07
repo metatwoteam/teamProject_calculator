@@ -3,8 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    dgd
+    <title>계산기</title>
+    <style>
+      body {
+        background-color: rgb(207, 205, 205);
+        display: flex;
+        justify-content: center;
+      }
+      .frame {
+        display: flex;
+        width: 30%;
+        height: 20%;
+        min-height: 80vh;
+        background-color: white;
+        margin-top: 30px;
+      }
+      /* #inputNumber {
+        display: flex;
+        flex-direction: row-reverse;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #numbers {
+        display: flex;
+      }
+      #row1,
+      #row2,
+      #row3,
+      #row4 {
+        display: flex;
+      } */
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="frame">
+      <div id=""></div>
+      <input type="text" id="inputNumber" value="0" />
+      <div id="numbers">
+        <div id="row1">
+          <button>.</button>
+          <button>0</button>
+          <button>=</button>
+          <button>+</button>
+        </div>
+        <div id="row2">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>-</button>
+        </div>
+        <div id="row3">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>*</button>
+        </div>
+        <div id="row4">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>/</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
