@@ -12,34 +12,60 @@
       }
       .frame {
         display: flex;
-        width: 30%;
+        flex-direction: column;
+        width: 20%;
         height: 20%;
-        min-height: 80vh;
+        min-height: 30vh;
         background-color: white;
         margin-top: 30px;
+        padding: 30px;
       }
-      /* #inputNumber {
+
+      #inputBox {
         display: flex;
-        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+
+      #inputNumber {
+        width: 100%;
+        text-align: right;
         border: none;
         font-size: 20px;
         font-weight: bold;
+        outline: none;
       }
+
       #numbers {
         display: flex;
+        margin: 2px;
       }
       #row1,
       #row2,
       #row3,
       #row4 {
-        display: flex;
-      } */
+      }
+      button {
+        width: 100%;
+        height: 20px; /* input 박스와 비슷한 높이 설정 */
+        font-size: 20px;
+        color: white;
+        border: none;
+        background-color: lightgray;
+        cursor: pointer;
+        margin: 2px;
+      }
+
+      button:hover {
+        background-color: gray;
+        color: white;
+      }
     </style>
   </head>
   <body>
     <div class="frame">
-      <div id=""></div>
-      <input type="text" id="inputNumber" value="0" />
+      <div id="inputBox">
+        <input type="text" id="inputNumber" value="0" readonly />
+      </div>
       <div id="numbers">
         <div id="row1">
           <button>.</button>
